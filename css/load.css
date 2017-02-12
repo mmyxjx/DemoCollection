@@ -1,0 +1,109 @@
+
+.loader {
+	/*position: ;*/
+	width: 100px;
+	height: 100px;
+}
+.loader-inner {
+	position: relative;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 0 auto;
+	background-color: #5cb85c;
+	-webkit-animation: loader-animation 0.8s ease-out infinite;
+	-moz-animation: loader-animation 0.8s ease-out infinite;
+	-ms-animation: loader-animation 0.8s ease-out infinite;
+	-o-animation: loader-animation 0.8s ease-out infinite;
+	animation: loader-animation 0.8s ease-out infinite;
+
+}
+.loader-shadow {
+	position: relative;
+	top: 50px;
+	width: 10px;
+	height: 5px;
+	z-index: 3;
+	margin: 0 auto;
+	background-color: #ccc;
+	border-radius: 50%;
+	-webkit-animation: shadow-animation 0.8s ease-out infinite;
+	-moz-animation: shadow-animation 0.8s ease-out infinite;
+	-ms-animation: shadow-animation 0.8s ease-out infinite;
+	-o-animation: shadow-animation 0.8s ease-out infinite;
+	animation: shadow-animation 0.8s ease-out infinite;
+
+}
+/*方法一：利用长宽的改变来做动画*/
+@keyframes shadow-animation {     
+	0% { width:10px;height: 5px}
+	50% { width:40px;height: 8px}
+	100% { width:10px;height: 5px}
+}
+
+@-webkit-keyframes shadow-animation { /*Safari and Chrome*/
+	0% { width:10px;height: 5px}
+	50% { width:40px;height: 8px}
+	100% { width:10px;height: 5px}
+}
+@-moz-keyframes shadow-animation { 
+	0% { width:10px;height: 5px}
+	50% { width:40px;height: 8px}
+	100% { width:10px;height: 5px}
+}
+@-o-keyframes shadow-animation { 
+	0% { width:10px;height: 5px}
+	50% { width:40px;height: 8px}
+	100% { width:10px;height: 5px}
+}
+@-ms-keyframes shadow-animation { 
+	0% { width:10px;height: 5px}
+	50% { width:40px;height: 8px}
+	100% { width:10px;height: 5px}
+} 
+
+/*方法二：利用transform来做动画*/
+@keyframes loader-animation {
+  0% {
+    top: 0;
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  35% {
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background: #5cb85c;
+  }
+  50% {
+    top: 55px;
+    -moz-transform: scale(1.2, 0.8);
+    -o-transform: scale(1.2, 0.8);
+    -ms-transform: scale(1.2, 0.8);
+    -webkit-transform: scale(1.2, 0.8);
+    transform: scale(1.2, 0.8);
+    background: #449d44;
+  }
+  75% {
+    -moz-transform: scale(0.8, 1.2);
+    -o-transform: scale(0.8, 1.2);
+    -ms-transform: scale(0.8, 1.2);
+    -webkit-transform: scale(0.8, 1.2);
+    transform: scale(0.8, 1.2);
+  }
+  100% {
+    top: 0px;
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    background: #5cb85c;
+  }
+}

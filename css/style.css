@@ -1,0 +1,102 @@
+body {
+	font-family: "Microsoft Yahei", sans-serif;
+	min-height: 100%;
+	overflow-y: scroll;
+}
+body,html {
+	font-size: 12px;
+}
+
+html,body {
+	width: 100%;
+	
+}
+.csl-container {
+	position: relative;
+	width: 100%;
+
+	overflow: hidden;
+	overflow-x: hidden;
+}
+.item-container {
+	position: relative;
+	width: 400%;
+}
+.item-container li {
+	width: 25%;
+	list-style: none;
+	float: left;
+}
+.item-container li img {
+	width: 100%;
+}
+.dots-container {
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	top: -50px;
+}
+.dots-content {
+	width: 180px;
+	margin: 0 auto;
+}
+.dots-content span {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 10px;
+	border: 2px solid #ffad86;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.dots-content span.active,.dots-content span:hover {
+	background: #ffad86;
+}
+.csl-container .btn {
+	position: absolute;
+	z-index: 10;
+	width: 50px;
+	height: 50px;
+	color: #555;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+
+
+}
+
+.csl-container .btn:hover {
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.6);
+}
+.csl-container .btn.prev-btn {
+	left: 40px;
+
+}
+.csl-container .btn.next-btn {
+	right: 40px;
+	
+}
+.item .title {
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #EF5252;
+	text-align: center;
+}
+.item #main-panel {
+	width: 100%;
+	height: 80vh;
+}
+.item .css-loader-container {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+

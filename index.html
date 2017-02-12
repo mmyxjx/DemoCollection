@@ -2,10 +2,135 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DemoCollection</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/panel_style.css">
+	<link rel="stylesheet" href="./css/accordion.css">
+	<link rel="stylesheet" href="./css/load.css">
 </head>
-<body>
-	<h1>hello,xjx</h1>
-	
+<body class="clear">
+	<div class="csl-container clear" data-setting='{"width": "fullScreen","height": "fullScreen",
+	"speed": 500,"slideType": "normal"}'>
+	<div class="btn prev-btn">&lt;</div>
+	<div class="btn next-btn">&gt;</div>
+
+	<ul class="item-container clear">
+
+		<li class="item">
+			<!-- panel -->
+			<h1 class="title">会随鼠标翻转的方块</h1>
+			<div id="main-panel">
+				<div class="wowpanel">
+					<div class="content">move</div>
+				</div>
+				<div class="wowpanel">
+					<div class="content">your</div>
+				</div>
+				<div class="wowpanel">
+					<div class="content">cursor</div>
+				</div>
+				<div class="wowpanel">
+					<div class="content">over</div>
+				</div>
+			</div>
+		</li>
+		<li class="item">
+			<!-- css_accordion -->
+			<div class="a-wrap">
+				<section class="a-section">
+					<div class="a-try">
+						<img src="images/230.png" alt="">	
+					</div>
+					<h2 class="a-type">230</h2>
+					<div class="a-info">
+						<h2 class="a-title">230</h3>	
+					</div>
+				</section>
+
+				<section class="a-section">
+					<div class="a-try">
+						<img src="images/280.png" alt="">
+					</div>
+					<h2 class="a-type">280</h2>
+					<div class="a-info">
+						<h2 class="a-title">280</h3>
+					</div>
+				</section>
+
+				<section class="a-section">
+					<div class="a-try">
+						<img src="images/310.png" alt="">
+					</div>
+					<h2 class="a-type">310</h2>
+					<div class="a-info">
+						<h2 class="a-title">310</h3>
+					</div>
+				</section>
+
+				<section class="a-section">
+					<div class="a-try">
+						<img src="images/320.png" alt="">
+					</div>
+					<h2 class="a-type">320</h2>
+					<div class="a-info">
+						<h2 class="a-title">320</h3>
+					</div>
+				</section>
+
+				<section class="a-section">
+					<div class="a-try">
+						<img src="images/430.png" alt="">
+					</div>
+					<h2 class="a-type">430</h2>
+					<div class="a-info">
+						<h2 class="a-title">430</h3>
+					</div>
+				</section>
+
+				</div>
+				<div class="a-topic">
+					<h1 class="title">css手风琴效果</h1>
+				</div>
+			</li>
+			<li class="item">
+				<h1 class="title">css加载动画</h1>
+				<div class="css-loader-container">
+					<div class="loader">
+  						<div class="loader-inner"></div>
+  						<div class="loader-shadow"></div>
+					</div>
+				</div>
+			</li>
+
+
+
+		</ul>
+
+
+		<div class="dots-container">
+			<div class="dots-content">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+	<script type="text/javascript" src="js/lib/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/panel.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		var crl = new Carousel($(".csl-container"));
+
+	});
+	</script>
 </body>
+
 </html>
